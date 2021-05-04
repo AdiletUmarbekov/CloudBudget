@@ -1,0 +1,30 @@
+.contact {
+  padding: 117px 0 78px;
+}
+.contact__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  margin: 0 0 45px;
+  line-height: 43px;
+  color: #000000;
+}
+.contact__subtitle {
+  width: 434px;
+  height: 64px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: justify;
+  color: #000000;
+}
+.contact__figure {
+  outline: none;
+  margin-bottom: 24px;
+}
+
+input {
+  outline: none;
+  padding: 10px;
+}

@@ -1,0 +1,53 @@
+.home {
+  background: url('../images/main/Bg.svg') top left/cover no-repeat;
+  padding: 257px 0 190px;
+  &__title{
+    font-family:$fontFamily;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 86px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  &__subtitle{
+    font-family:$fontFamily;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 39px 0;
+  }
+  &__button{
+    width: 160px;
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    left: 668px;
+    top: 571px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    align-items: center;
+    text-transform: uppercase;
+    color: #a70048;
+    cursor: pointer;
+  }
+  &__button:hover{
+
+    transition: .8s ease-in-out;
+    transform: scale(1.2);
+    background-color:transparent ;
+    border: 2px groove white;
+    color: white;
+  }
+}

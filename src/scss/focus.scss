@@ -1,0 +1,55 @@
+
+.focus {
+  padding: 94px 0 95px;
+  background-color: #ED4C5C;
+  &__row {
+    display: flex;
+  }
+
+
+  &__title {
+    @include text (43px);
+    text-transform: uppercase;
+    /*margin: 42px 92px 0 0;*/
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+  &__subtitle {
+    @include text(14px);
+    margin-bottom: 40px;
+    margin-top: 24px;
+    line-height: 140%;
+    text-align: justify;
+    font-size: 16px;
+    color: white;
+  }
+  &__icon{
+    margin-right: 20px;
+    width:24px;
+    height: 24px;
+    line-height: 6px;
+    cursor: pointer;
+  }
+  &__icon:hover{
+    cursor: pointer;
+    transition: .8s ease-in-out;
+    transform: scale(1.2 );
+
+  }
+  &__icon:last-child {
+    margin-right: 0;
+    width: 5.8%;
+  }
+  &__col-6 {
+    height: 100%;
+
+    &_second {
+      background: url("../images/slide/1.svg")top left/100% 100% no-repeat;
+      position: relative;
+    }
+  }
+
+}
+

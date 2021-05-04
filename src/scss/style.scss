@@ -1,0 +1,31 @@
+@import "../libs/bootstrap/bootstrap-grid.min.css";
+@import "../fonts/stylesheet.css";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container{
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: Lato, sans-serif;
+}
+.row{
+margin: 0 -15px;
+}
+$fontFamily : Lato,sans-serif;
+@import "header";
+@import "home";
+@import "video";
+@import "features";
+@import "technology";
+@import "focus";
+@import "contact";
+@import "footer";
+@import "media";
+
+

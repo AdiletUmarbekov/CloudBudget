@@ -1,0 +1,77 @@
+.features {
+  padding: 63px 0 229px;
+  background-color: #FAFAFA;;
+&__title{
+  margin-bottom: 70px;
+  font-family: Lato,sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #000000;
+}
+  &__col {
+    height: 250px;
+    padding:0 28px 0 ;
+    background: top left/100% 100%;
+    position: relative;
+  }
+
+  &__Mcol:first-child &__col {
+    background-image: url("../images/features/Bg1.png");
+  }
+
+  &__Mcol:nth-child(2) &__col {
+    background-image: url("../images/features/Bg2.png");
+  }
+
+  &__Mcol:nth-child(3) &__col {
+    background-image: url("../images/features/Bg3.png");
+  }
+  &__card{
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    width:calc(100% - 56px);
+    padding: 33px 20px 33px 20px ;
+    background: #FFFFFF;
+    position: absolute;
+    margin:0 auto;
+    top: 157px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  &__card-title{
+    margin-bottom:20px;
+    font-family: Lato,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #101010;
+  }
+  &__card-subtitle{
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    margin-bottom:18px;
+    text-align: center;
+    color: #101010;
+  }
+  &__card-link{
+    display: inline-block;
+    font-family: Lato,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    text-decoration: none;
+    color: #9a2d37  ;
+
+  }
+}

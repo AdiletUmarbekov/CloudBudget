@@ -1,0 +1,17 @@
+.features {
+  padding: 63px 0 229px;
+}
+.features__col {
+  height: 250px;
+  padding: 0 15px;
+  background: top left/100% 100%;
+}
+.features__Mcol:first-child .features__col {
+  background-image: url("../images/features/Bg1.png");
+}
+.features__Mcol:first-child(2) .features__col {
+  background-image: url("../images/features/Bg2.png");
+}
+.features__Mcol:first-child(3) .features__col {
+  background-image: url("../images/features/Bg3.png");
+}

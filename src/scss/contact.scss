@@ -1,0 +1,108 @@
+.contact {
+  padding: 117px 0 78px;
+
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    margin: 0 0 45px;
+    line-height: 43px;
+    color: #000000;
+  }
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: justify;
+    color: #000000;
+
+  }
+  &__form{
+    width: 540px;
+  }
+  &__form-block{
+    height: 60px;
+    margin-bottom: 25px;
+
+    &:first-child{
+      display: flex;
+
+    }
+  }
+  &__input {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 6px;
+    outline: none;
+    padding-left: 31px;
+    &:valid:not(:placeholder-shown){
+      border:  1px solid greenyellow ;
+    }
+    &:invalid:not(:placeholder-shown){
+      border: 1px solid red;
+    }
+
+  }
+  &__select{
+    padding-left: 31px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 6px;
+    outline: none;
+    appearance: none;
+    background: transparent;
+
+  }
+  &__form-block:nth-child(3){
+    position: relative;
+    &::before{
+      position: absolute;
+      content: url("../images/contact/ChevronDown(E70D).svg");
+      right: 26px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: -1;
+    }
+  }
+
+
+  &__form-block:first-child label{
+    width: 100%;
+    margin-right: 30px;
+    &:nth-child(2){
+      margin-right: 0;
+    }
+  }
+  &__form-block:first-child label &__input{
+    width: 100%;
+
+  }
+  &__btn{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 160px;
+    height: 50px;
+    background: #ed003b;
+    border: 1.5px solid #ED4C5C;
+    box-sizing: border-box;
+    border-radius: 6px;
+    outline: none;
+  }
+  &__btn:hover{
+
+    transition: .6s ease-in-out;
+    background-color: rgba(237, 74, 109, 0.77);
+    border: 1.5px solid rgba(237, 74, 109, 0.52);
+  }
+}
+

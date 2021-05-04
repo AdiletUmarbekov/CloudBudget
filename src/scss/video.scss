@@ -1,0 +1,72 @@
+@mixin text($ln){
+  font-family:$fontFamily;
+  font-style: normal;
+  line-height: $ln;
+  font-weight: normal;
+  font-size: 14px;
+  color: #000000;
+}
+.video{
+  padding: 94px 0 95px;
+&__title{
+  @include text (43px);
+  margin-top: 46px;
+  font-weight: 600;
+  font-size: 36px;
+  color: #000000;
+}
+  &__subtitle{
+    @include text (140%);
+    text-align: justify;
+    margin: 25px 0;
+  }
+  &__learnMore{
+    @include text (140%);
+    font-size: 14px;
+    text-align: justify;
+    color: #ed0008;
+    text-decoration: none;
+  }
+  &__row{
+    display: flex;
+  }
+  &__col-6{
+    position: relative;
+    height: 311px;
+    &_second{
+      position: relative;
+      background: url("../images/section2/video/Video_bg.svg") top left/100% 100%  no-repeat;
+    }
+  }
+  &__play{
+    content: '';
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background:#ED4C5C;
+    cursor: pointer;
+    border-radius: 50%;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+  &__play::after{
+    content: '';
+    position: absolute;
+    top: -7.1px;
+    left: -7.0px;
+    height: 64px;
+    width: 64px;
+    opacity: 0.5;
+    border-radius: 50%;
+    border: 8px solid rgba(237, 62, 94, 0.93);
+    transition: 0.6s;
+  }
+  &__play:hover{
+    cursor: pointer;
+  }
+}
